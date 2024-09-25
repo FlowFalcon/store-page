@@ -1,0 +1,209 @@
+         :root {
+            --color-bg: #0a192f;
+            --color-text: #e6f1ff;
+            --color-primary: #64ffda;
+            --color-secondary: #ffd700;
+            --color-tertiary: #ff6b6b;
+            --color-surface: #112240;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        }
+        header {
+            background-color: var(--color-surface);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+            border-radius: 50%;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: var(--color-primary);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero.hero {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), url('https://telegra.ph/file/f4b0d0c1b853576a35808.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 0;
+            color: var(--color-text);
+            }
+
+
+        footer a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: var(--color-bg);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: var(--color-secondary);
+        }
+        .product-section {
+            margin-top: 4rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .product {
+            background-color: var(--color-surface);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        .product h3 {
+            color: var(--color-primary);
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .product p {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .product .price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--color-secondary);
+        }
+        .about-section, .contact-section {
+            margin-top: 4rem;
+            background-color: var(--color-surface);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--color-primary);
+        }
+        footer {
+            background-color: var(--color-surface);
+            color: var(--color-text);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 4rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .contact-item a {
+            color: var(--color-text);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .contact-item a:hover {
+            color: var(--color-primary);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--color-text);
+        }
+        .social-icon:hover {
+            fill: var(--color-primary);
+        }
+        .hero {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), url('https://telegra.ph/file/375281195e05c820fa221.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 100px 0;
+            color: var(--color-text);
+        }
+        @media (max-width: 768px) {
+            .hero {
+                background-size: contain;
+            }
+        }
+        .judul .subjudul {
+            margin: 0;
+            padding: 0;
+        }
+        .subjudul {
+            margin-top: -30px;
+        }
